@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.sortable:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card, .portfolio-card, .stock-detail-card, .stock-chart-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover, .portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #6c757d;
+}
+
+.stat-value {
+  font-weight: 500;
+}
+
+.price-change {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.trade-summary {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+  }
+}
